@@ -1,0 +1,31 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arka plan -->
+  <rect width="400" height="200" rx="15" fill="#2C2C2C"/>
+
+  <!-- Formül grubu -->
+  <g font-family="Arial, sans-serif" fill="#FFFFFF" text-anchor="middle">
+    
+    <!-- Baud Rate = -->
+    <text x="140" y="100" font-size="28" font-weight="bold" dominant-baseline="middle">
+      Baud Rate =
+    </text>
+
+    <!-- Kesir grubu (sağa kaydırıldı → daha fazla boşluk) -->
+    <g transform="translate(265, 100)">
+      
+      <!-- Üst: 1 -->
+      <text x="0" y="-12" font-size="32" font-weight="bold" dominant-baseline="middle">1</text>
+      
+      <!-- Kesir çizgisi -->
+      <line x1="-20" y1="0" x2="20" y2="0" stroke="white" stroke-width="2.5"/>
+      
+      <!-- Alt: T -->
+      <text x="0" y="22" font-size="32" font-family="serif" font-style="italic" dominant-baseline="middle">T</text>
+    </g>
+  </g>
+
+  <!-- Açıklama metni -->
+  <text x="200" y="165" font-family="Arial, sans-serif" font-size="16" fill="#BBBBBB" text-anchor="middle">
+    Burada <tspan font-style="italic" fill="#FFFFFF">T</tspan> = bit süresi
+  </text>
+</svg>
