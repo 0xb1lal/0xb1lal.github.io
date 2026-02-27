@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://tryhackme-images.s3.amazonaws.com/user-avatars/6554c8f56f6ace35213944dc-1724757587626
+avatar: https://avatars.githubusercontent.com/u/107482424?v=4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
