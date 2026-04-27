@@ -8,6 +8,7 @@ description: "ZTE ZXHN H108N model bir modem üzerinde UART erişimi sağlamak v
 media_subpath: /images/hardware-hacking-zte_zxhn_h108n/
 layout: post
 published: true  
+pin: true
 lang: "tr"
 image:
   path: main.png
