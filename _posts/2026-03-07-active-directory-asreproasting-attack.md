@@ -1,7 +1,7 @@
 ---
 title: "Active Directory ASREPRoasting Attack - Purple Mode"
 author: b1lal
-categories: [Purple, Active Directory]
+categories: [Active Directory, Purple]
 tags: [active directory, asreproasting, attack, security, pentesting, red team, ad, kerberos, password spraying, active directory, hashcat, kerbrute, rubeus]
 render_with_liquid: false
 description: "Bu yazıda Active Directory ortamlarında gerçekleştirilen ASREPRoasting saldırısını, nasıl yapıldığını ve bu saldırıya karşı nasıl korunabileceğimizi anlatacağım."

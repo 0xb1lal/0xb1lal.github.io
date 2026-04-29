@@ -1,7 +1,7 @@
 ---
 title: "Active Directory LLMNR/NBT-NS Poisoning - Purple Mode"
 author: b1lal
-categories: [Purple, Active Directory]
+categories: [Active Directory, Purple]
 tags: [active directory, llmnr, nbtns, poisoning, attack, security, pentesting, red team, ad, kerberos, active directory, hashcat, responder, inveight, naxious, metasploit]
 render_with_liquid: false
 description: "Bu yazıda Active Directory ortamlarında gerçekleştirilen LLMNR/NBT-NS Poisoning saldırısını, nasıl yapıldığını ve bu saldırıya karşı nasıl korunabileceğimizi anlatacağım."
